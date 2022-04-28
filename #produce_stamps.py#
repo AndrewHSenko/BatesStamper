@@ -1,0 +1,19 @@
+from reportlab.pdfgen import canvas
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfbase import pdfmetrics
+from reportlab.lib import colors
+
+# Create PDF page for a stamp
+def make_stamp_text(stamp):
+    return
+        
+
+# FILE MUST BE {ex #} stamps
+def main(ex_num, num_pgs):
+    # Some kind of writer
+    for i in range(1, num_pgs + 1):
+        pg_num = f'{i:06d}'
+        stamp = ex_num + '-' + pg_num
+        make_stamp_text(stamp)
+        # Add stamp page pdf to writer
+    # Write contents of writer to file with the name: {ex #} stamps
